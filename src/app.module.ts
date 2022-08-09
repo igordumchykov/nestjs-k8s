@@ -5,9 +5,9 @@ import { ConfigModule } from '@nestjs/config';
 
 @Module({
   imports: [
-    //todo: load from local yaml for local development
       ConfigModule.forRoot({
-      isGlobal: true,
+        isGlobal: true,
+        envFilePath: 'config/local.env',
     })
   ],
   controllers: [AppController],

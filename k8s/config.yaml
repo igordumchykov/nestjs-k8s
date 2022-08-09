@@ -3,4 +3,5 @@ kind: ConfigMap
 metadata:
   name: config-map
 data:
-  app-name: app3
+  app_name: app5
+

@@ -8,8 +8,8 @@ export class AppService {
   private config: ConfigService;
 
   getHello(): string {
-    const app = this.config.get('app-name')
-    const psw = this.config.get('app-password')
+    const app = this.config.get('app_name')
+    const psw = this.config.get('app_password')
     return `name: ${app}, password: ${psw}`;
   }
 }
